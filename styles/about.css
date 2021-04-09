@@ -1,0 +1,27 @@
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about__left, .about__right {
+    width: 50vw;
+}
+.about__right {
+    height: 600px;
+    background-image: url('../images/about__pic-min.jpg');
+    background-repeat: no-repeat;
+
+}
+.about__left {
+    max-width: 700px;
+    margin-left: calc(50vw - 700px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about__title {
+    margin-bottom: 35px;
+}
+.about__text {
+    padding-right: 110px;
+}
