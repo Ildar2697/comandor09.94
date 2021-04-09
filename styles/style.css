@@ -88,5 +88,6 @@ button:hover, button:focus, input:hover, input:focus {
     stroke: #EE3D48;
 }
 .main {
+    position: relative;
     margin-top: 98px;
 }

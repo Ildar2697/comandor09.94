@@ -58,6 +58,7 @@ const swiperHero1 = new Swiper('.swiper-container-hero1', {
 
   window.addEventListener('scroll', function(event) {
     let scroll = this.scrollY;
+    console.log(scroll)
     if (scroll < 400) {
       upBtn.style.display = 'none';
     } else {
