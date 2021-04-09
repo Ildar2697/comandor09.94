@@ -113,6 +113,17 @@
     .hero1-btn {
         padding: 15px 10px;
     }
+    .catalogies-1, .catalogies-2 {
+        height: 348px;
+    }
+    .catalogies-3 {
+        height: 200px;
+    }
+    .cat-text {
+        font-size: 22px;
+        bottom: 8px;
+        left: 8px;
+    }
 }
 @media (max-width: 1200px) {
     .contacts-wrapper {
@@ -381,12 +392,6 @@
     .mb180 {
         margin-bottom: 60px;
     }
-    /* .advantages__item-text {
-        font-family: 'montserratbold';
-    } */
-    /* .advantages__item-span {
-        font-size: 60px;
-    } */
 }
 /* @media (max-width: 560px) {
     .advantages__item-text {
