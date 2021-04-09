@@ -23,6 +23,9 @@ ul li {
     font-family: 'montserratbold';
     font-size: 40px;
 }
+.main {
+    margin-top: 98px;
+}
 .mb35 {
     margin-bottom: 35px;
 }
@@ -68,38 +71,22 @@ button:hover, button:focus, input:hover, input:focus {
 .fs-0 {
     flex-shrink: 0;
 }
-
-
-
-
-
-
-
-
-/* .contacts-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.up-btn {
+    z-index: 30;
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
 }
-.contacts {
-    margin-top: 30px;
+.up-btn-img-path, .up-btn-img-circle {
+    stroke: black;
+    transition: all 0.3s ease-in-out;
 }
-#map {
-    width: 50vw;
-    height: 700px;
+.up-btn:hover .up-btn-img-circle {
+    stroke: #EE3D48;
 }
-.contacts__info {
-    width: 50vw;
-    max-width: 700px;
-    margin-right: calc(50vw - 700px);
+.up-btn:hover .up-btn-img-path {
+    stroke: #EE3D48;
 }
-@media (max-width: 1400px) {
-    .container {
-        padding: 0 20px;
-    }
-    .contacts__info {
-        padding-right: 20px;
-        margin-right: 0;
-    }
-} */
+.main {
+    margin-top: 98px;
+}

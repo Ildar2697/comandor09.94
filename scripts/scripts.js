@@ -47,4 +47,33 @@ const swiperHero1 = new Swiper('.swiper-container-hero1', {
     //   el: '.swiper-scrollbar-hero1',
     // },
   });
+  let upBtn = document.querySelector('.up-btn');
+  upBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  });
 
+  window.addEventListener('scroll', function(event) {
+    let scroll = this.scrollY;
+    if (scroll < 400) {
+      upBtn.style.display = 'none';
+    } else {
+      upBtn.style.display = 'block';
+    }
+  })
+
+
+  let headerList = document.querySelector('.header__list');
+
+  headerList.addEventListener('click', function(event) {
+    if (event.target.classList.contains('header__item-link')) {
+      event.preventDefault()
+      window.scrollTo({
+        top: 1000,
+        left: 0,
+        behavior: 'smooth'
+      })
+  }})

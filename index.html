@@ -16,15 +16,62 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/stocks.css">
     <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero1.css">
     <link rel="stylesheet" href="styles/media.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
     </script>
     <title>Document</title>
 </head>
 <body>
 
+    <header class="header">
+        <div class="container header-wrapper">
+            <a class="header__logo" href="#">
+                <span class="hidden">Hidden</span>
+                <img class="header__logo-img" src="images/header__logo-min.png" alt="logo">
+            </a>
+            <div class="header__burger">
+                <span class="header__burger-span"></span>
+            </div>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__item-link" href="#catalog">Каталог</a></li>
+                <li class="header__item"><a class="header__item-link" href="#stocks">Акции</a></li>
+                <li class="header__item"><a class="header__item-link" href="#projects">Проекты</a></li>
+                <li class="header__item"><a class="header__item-link" href="#about">О нас</a></li>
+                <li class="header__item"><a class="header__item-link" href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="header__links">
+                <a class="header__links-fav" href="#">
+                    <span class="hidden">Hidden</span>
+                    <img class="header__links-fav-pic" src="images/header__fav.svg" alt="pic">
+                </a>
+                <a class="header__links-route" href="#">
+                    <!-- <img class="header__links-route-pic" src="images/header__route.svg" alt="pic"> -->
+                    <svg class="header__links-route-pic" width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="header__links-route-pic-path" d="M11 6.5C10.0729 6.5 9.16662 6.77492 8.39576 7.28999C7.62491 7.80506 7.0241 8.53714 6.66931 9.39367C6.31453 10.2502 6.2217 11.1927 6.40257 12.102C6.58344 13.0113 7.02988 13.8465 7.68544 14.5021C8.341 15.1576 9.17623 15.6041 10.0855 15.7849C10.9948 15.9658 11.9373 15.873 12.7938 15.5182C13.6504 15.1634 14.3824 14.5626 14.8975 13.7917C15.4126 13.0209 15.6875 12.1146 15.6875 11.1875C15.6861 9.94474 15.1918 8.75328 14.313 7.87451C13.4342 6.99574 12.2428 6.50143 11 6.5ZM11 14C10.4437 14 9.89997 13.835 9.43746 13.526C8.97495 13.217 8.61446 12.7777 8.40159 12.2638C8.18872 11.7499 8.13302 11.1844 8.24154 10.6388C8.35006 10.0932 8.61793 9.5921 9.01126 9.19876C9.4046 8.80543 9.90574 8.53756 10.4513 8.42904C10.9969 8.32052 11.5624 8.37622 12.0763 8.58909C12.5902 8.80196 13.0295 9.16245 13.3385 9.62496C13.6476 10.0875 13.8125 10.6312 13.8125 11.1875C13.8117 11.9332 13.5151 12.648 12.9878 13.1753C12.4605 13.7026 11.7457 13.9992 11 14ZM11 0.875C8.26591 0.878102 5.64468 1.96559 3.71139 3.89889C1.77809 5.83218 0.690602 8.45341 0.6875 11.1875C0.6875 14.8667 2.38789 18.7671 5.60504 22.4668C7.05276 24.1385 8.68187 25.644 10.4623 26.9555C10.6199 27.0659 10.8076 27.125 11 27.125C11.1924 27.125 11.3801 27.0659 11.5377 26.9555C13.3181 25.644 14.9472 24.1385 16.395 22.4668C19.612 18.7671 21.3125 14.8668 21.3125 11.1875C21.3094 8.45341 20.2219 5.83218 18.2886 3.89889C16.3553 1.96559 13.7341 0.878102 11 0.875ZM11 25.0133C9.06254 23.4936 2.5625 17.8943 2.5625 11.1875C2.5625 8.94974 3.45145 6.80362 5.03379 5.22129C6.61612 3.63895 8.76224 2.75 11 2.75C13.2378 2.75 15.3839 3.63895 16.9662 5.22129C18.5486 6.80362 19.4375 8.94974 19.4375 11.1875C19.4375 17.8944 12.9371 23.4939 11 25.0133Z"/>
+                    </svg>
+                    <div class="header__links-route-text">Адреса салонов</div>
+                </a>
+            </div>
+            <div class="header__contacts">
+                <a class="header__contacts-tel" href="tel:+73472588302">+7 (347) 258 83 02</a>
+                <a class="header__contacts-callback" href="#">Перезвонить мне</a>
+            </div>
+        </div>
+    </header>
+
     <main class="main">
+
+        <a class="up-btn">
+            <span class="hidden">Hidden</span>
+            <svg class="up-btn-img" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle class="up-btn-img-circle" cx="50" cy="50" r="49" stroke-width="2"/>
+                <path class="up-btn-img-path" d="M50 74V27M50 27L35 42M50 27L65 42" stroke-width="2"/>
+            </svg>
+            <!-- <img class="up-btn-img" alt="pic" src="images/up-btn.svg"> -->
+        </a>
+
 
         <div class="hero1 mb180">
             <div class="container">
@@ -93,61 +140,31 @@
             </div>
         </div>
 
-    <!-- <div class="catalog mb180">
-        <div class="container">
-            <div class="catalog__title title">Каталог</div>
-               <div class="grid-container">
-                 <div class="upper">
-                    <a class="upper-square catalog-block" href="#">
-                        <div class="upper-square-text catalog-text">Шкафы-купе</div>
-                    </a>
-                    <a class="upper-left-top catalog-block" href="#">
-                        <div class="upper-left-top-text catalog-text">Гардеробные</div>
-                    </a>
-                    <a class="upper-left-bottom catalog-block" href="#">
-                        <div class="upper-left-bottom-text catalog-text">Кухни</div>
-                    </a>
-                </div>
-                <div class="lower">
-                    <a class="lower-left catalog-block" href="#">
-                        <div class="lower-left-text catalog-text">Офис</div>
-                    </a>
-                    <a class="lower-mid catalog-block" href="#">
-                        <div class="lower-mid-text catalog-text">Детская</div>
-                    </a>
-                    <a class="lower-right catalog-block" href="#">
-                        <div class="lower-right-text catalog-text">Прихожая</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="catalogies mb180">
         <div class="container">
-            <div class="catalog__title title mb35">Каталог</div>
+            <div class="catalog__title title mb35" id="catalog">Каталог</div>
             <div class="catalogies-wrapper">
                 <div class="catalogies-1">
-                    <div class="catalogies-1-1">
+                    <div class="catalogies-1-1 catalog-item">
                         <div class="cat-text">Гардеробные</div>
                     </div>
-                    <div class="catalogies-1-2">
+                    <div class="catalogies-1-2 catalog-item">
                         <div class="cat-text">Кухни</div>
                     </div>
                 </div>
-                <div class="catalogies-2">
+                <div class="catalogies-2 catalog-item">
                     <div class="cat-text">Шкафы-купе</div>
                 </div>
             </div>
             <div class="catalogies-wrapper">
                 <div class="catalogies-3">
-                    <div class="catalogies-3-1 catalogies-3-child">
+                    <div class="catalogies-3-1 catalogies-3-child catalog-item">
                         <div class="cat-text">Офис</div>
                     </div>
-                    <div class="catalogies-3-2 catalogies-3-child">
+                    <div class="catalogies-3-2 catalogies-3-child catalog-item">
                         <div class="cat-text">Детская</div>
                     </div>
-                    <div class="catalogies-3-3 catalogies-3-child">
+                    <div class="catalogies-3-3 catalogies-3-child catalog-item">
                         <div class="cat-text">Прихожая</div>
                     </div>
                 </div>
@@ -159,7 +176,7 @@
         <div class="stocks-wrapper">
             <div class="stocks__left"></div>
             <div class="stocks__right">
-                <div class="stocks__right-title title">Акция</div>
+                <div id="stocks" class="stocks__right-title title">Акция</div>
                 <div class="stocks__right-text m300-s24-l36 mb35">Cкидки до 25% на все товары из категории Кухня</div>
                 <button class="stocks__right-button btn-p-25-71">Подробнее</button>
             </div>
@@ -169,7 +186,7 @@
     <div class="ideas ideas-wrapper mb180">
         <div class="ideas__left"></div>
         <div class="ideas__right">
-            <div class="ideas__title">
+            <div class="ideas__title" id="projects">
                 <div class="ideas__title-1 m500-s36-l44">Ваши идеи</div>
                 <img class="ideas__title-2" alt="arrow" src="images/projects__bottom-arrow.svg">
                 <div class="ideas__title-3 m500-s36-l44">Наша работа</div>
@@ -182,7 +199,7 @@
 
     <div class="about about-wrapper mb180">
         <div class="about__left">
-            <div class="about__title title">О нас</div>
+            <div class="about__title title" id="about">О нас</div>
             <div class="about__text m300-s24-l36">Командор - официальный дистрибьютор и эксклюзивный представитель международной марки Komandor в России. 25 лет на рынке, представительства в более, чем 11 странах мира, в России работает более 400 торговых точек и 40 сертифицированных производств</div>
         </div>
         <div class="about__right"></div>
@@ -251,7 +268,7 @@
             <div id="map"></div>
         </div>
         <div class="contacts__info">
-            <div class="contacts__title title">Контакты</div>
+            <div class="contacts__title title" id="contacts">Контакты</div>
             <div class="contacts__content">
                 <div class="contacts__content-text">Адреса салонов в Уфе</div>
                 <ul class="contacts__content-list">

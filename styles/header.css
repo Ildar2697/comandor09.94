@@ -1,0 +1,129 @@
+.header {
+    padding: 14px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    background: white;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list {
+    display: flex;
+    width: 39%;
+    justify-content: space-between;
+}
+.header__item-link {
+    font-family: 'montserratmedium';
+    font-size: 20px;
+    color: #242424;
+    transition: all 0.3s ease-in-out;
+}
+.header__item-link:hover {
+    color: #EE3D48;
+}
+.header__item {
+    flex-shrink: 0;
+}
+.header__links {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__links-route {
+    display: flex;
+    align-items: center;
+    font-family: 'montserratmedium';
+    font-size: 20px;
+    color: #242424;
+}
+.header__links-route-pic {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__contacts-tel {
+    margin-bottom: 10px;
+    font-family: 'montserratbold';
+    font-size: 24px;
+    color: #EE3D48;
+}
+.header__contacts-callback {
+    font-family: 'montserratmedium';
+    font-size: 24px;
+    color: #242424;
+    border-bottom: 1px solid;
+}
+.header__contacts-callback:hover {
+    color: #EE3D48;
+    transition: all 0.3s ease-in-out;
+}
+.header__links-route-text {
+    flex-shrink: 0;
+    border-bottom: 1px solid;
+    color: #242424;
+    transition: all 0.3s ease-in-out;
+}
+.header__links-route-pic-path {
+    fill: #242424;
+    transition: all 0.3s ease-in-out;
+}
+.header__links-route:hover .header__links-route-text {
+    color: #EE3D48;
+}
+.header__links-route:hover .header__links-route-pic-path {
+    fill: #EE3D48;
+}
+.header__burger {
+    position: relative;
+    height: 20px;
+    width: 35px;
+    cursor: pointer;
+}
+.header__burger-span {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #014C8F;
+    transition: all 0.3s ease-in-out;
+}
+.header__burger::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #014C8F;
+    transition: all 0.3s ease-in-out;
+}
+.header__burger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #014C8F;
+    transition: all 0.3s ease-in-out;
+}
+.header__burger:hover .header__burger-span {
+    background: #EE3D48;
+}
+.header__burger:hover::after {
+    background: #EE3D48;
+}
+.header__burger:hover::before {
+    background: #EE3D48;
+}
