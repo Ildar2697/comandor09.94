@@ -1,4 +1,41 @@
 @media (max-width: 1400px) {
+    .hero2__right {
+        width: 55%;
+    }
+    .hero2__left {
+        width: 65%;
+    }
+    .hero2__left, .hero2__right {
+        height: 670px;
+    }
+    .hero2__right {
+        margin-right: 2px;
+    }
+    .hero2__left-btns {
+        margin-top: 45px;
+    }
+    .hero2__left-title {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .hero2__left-item, .hero2__left-item-span {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .swiper-container-hero2 .swiper-pagination {
+        bottom: 17px;
+    }
+    .swiper-container-hero2 .swiper-button-next, .swiper-container-hero2 .swiper-button-prev {
+        bottom: 2px;
+    }
+    .hero2-wrapper {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    .sliders__wrapper {
+        margin: 0;
+        padding: 0 20px;
+    }
     .header__links-fav {
         margin-right: 10px;
     }
@@ -95,27 +132,6 @@
     .lower-right {
         background-position: bottom;
     }
-    .slide-hero1-left, .slide-hero1-right {
-        height: 746px;
-    }
-    .slide-hero1-left-title {
-        line-height: 60px;
-    }
-    .slide-hero1-span, .slide-hero1-left-item {
-        font-size: 20px;
-    }
-    .slide-hero1-left-item {
-        width: 28%;
-    }
-    .swiper-pagination-hero1 {
-        bottom: 65px !important;
-    }
-    .swiper-button-next-hero1, .swiper-button-prev-hero1 {
-        bottom: 50px;
-    }
-    .hero1-btn {
-        padding: 15px 10px;
-    }
     .catalogies-1, .catalogies-2 {
         height: 348px;
     }
@@ -129,8 +145,13 @@
     }
 }
 @media (max-width: 1200px) {
-    .slide-hero1-left, .slide-hero1-right {
-        height: 550px;
+    .hero2__left-btn {
+        padding: 20px 14px;
+    }
+    .hero2__left-btn {
+        padding: 20px 14px;
+        font-family: 'montserratmedium';
+        font-size: 18px;
     }
     .header__logo-img {
         width: 70px;
@@ -201,32 +222,33 @@
     .contacts-wrapper {
         padding-bottom: 100px;
     }
-    .slide-hero1-right {
-        background-size: cover;
-    }
     .footer__bottom-logo-pic {
         width: 150px;
     }
 }
 @media (max-width: 992px) {
-    .slide-hero1-left-item:last-child {
-        margin-bottom: 0;
+    .hero2__left-btns {
+        width: 60%;
+        flex-direction: column;
+        align-items: stretch;
     }
-    .slide-hero1-span, .slide-hero1-left-item {
-        font-size: 16px;
+    .hero2__left-cost {
+        margin-bottom: 10px;
+        margin-right: 0px;
     }
-    .slide-hero1-left-title {
-        font-size: 32px;
-        line-height: 40px;
+    .hero2__left-item:not(:last-child) {
+        margin-right: 10px;
     }
-    .slide-hero1-left-item::before {
-        top: -5px;
+    .hero2__left-btn {
+        padding: 14px 14px;
     }
-    .slide-hero1-left-list {
-        margin-bottom: 30px;
+    .hero2__left-title {
+        font-size: 28px;
+        line-height: 34px;
     }
-    .slide-hero1-span, .slide-hero1-left-item {
-        line-height: 22px;
+    .hero2__left-item, .hero2__left-item-span {
+        font-size: 18px;
+        line-height: 26px;
     }
     .header__list {
         display: none;
@@ -301,47 +323,26 @@
     .ideas__left {
         height: 450px;
     }
-    .slide-hero1-left-btns {
-        width: 40%;
-        flex-direction: column;
-    }
-    .hero1-left-cost {
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-    .hero1-btn {
-        font-size: 16px;
-    }
     .btn-p-25-71 {
         font-size: 18px;
     }
 }
 @media (max-width: 768px) {
-    .slide-hero1-left, .slide-hero1-right {
-        height: 590px;
+    .hero2-wrapper {
+        padding-left: 15px;
     }
-    .swiper-pagination-hero1 {
-        bottom: 30px !important;
+    .hero2__left-list {
+        flex-direction: column;
     }
-    .swiper-container-hero1 .swiper-button-prev::after, .swiper-container-hero1 .swiper-button-next::after {
-        font-size: 20px;
-        color: #EE3D48;
+    .hero2__left-item {
+        margin-right: 0;
     }
-    .swiper-button-next-hero1 {
-        left: 175px;
+    .hero2__left-item:not(:last-child) {
+        margin-bottom: 15px;
     }
-    .swiper-container-hero1 .swiper-pagination-hero1 .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-    }
-    .swiper-button-next-hero1, .swiper-button-prev-hero1 {
-        bottom: 12px;
-    }
-    .swiper-pagination-hero1 {
-        width: 100px !important;
-    }
-    .slide-hero1-left-btns {
-        width: 57%;
+    .hero2__left-btns {
+        width: 90%;
+        margin-top: 20px;
     }
     .main {
         margin-top: 62px;
@@ -364,13 +365,6 @@
     .header__contacts-tel {
         margin-bottom: 5px;
     }
-    .slide-hero1-left-list {
-        margin-bottom: 20px;
-        flex-direction: column;
-    }
-    .hero1-left-cost {
-        margin-bottom: 10px;
-    }
     .footer__bottom {
         flex-direction: column;
     }
@@ -388,22 +382,6 @@
     }
     .stocks__right-text {
         font-size: 22px;
-    }
-    .slide-hero1-left-title {
-        font-size: 22px;
-        line-height: 28px;
-    }
-    .slide-hero1-span, .slide-hero1-left-item {
-        line-height: 22px;
-    }
-    .slide-hero1-left {
-        width: 44%;
-    }
-    .slide-hero1-left-item {
-        margin-bottom: 15px;
-    }
-    .slide-hero1-left-item::before {
-        top: -5px;
     }
     .ideas-wrapper {
         flex-direction: column;
@@ -558,16 +536,6 @@
         font-size: 14px;
         line-height: 18px;
     }
-    .hero1-btn {
-        font-size: 14px;
-        padding: 10px 5px;
-    }
-    .slide-hero1-left-item {
-        width: 75%;
-    }
-    .slide-hero1-right {
-        width: 64%;
-    }
     .m300-s24-l36 {
         font-size: 16px;
         line-height: 22px;
@@ -651,9 +619,6 @@
         font-size: 18px;
         line-height: 24px;
     }
-    .slide-hero1-right {
-        width: 70%;
-    }
     .header__links-fav, .header__links-route-pic {
         margin-right: 5px;
     }
@@ -672,29 +637,48 @@
     .header__contacts-tel, .header__contacts-callback {
         font-size: 12px;
     }
-    .slide-hero1-left-btns {
-        width: 80%;
-    }
     .callback__form-input-wrapper-name, .callback__form-input-wrapper-tel, .callback__form-select {
         width: 79%;
     }
     .callback {
         margin-bottom: 0;
     }
+    .hero2__left-btn {
+        padding: 10px 5px;
+    }
+    .hero2__left-btn {
+        font-size: 14px;
+    }
+    .hero2__left-title {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .hero2__left-item, .hero2__left-item-span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .hero2__left, .hero2__right {
+        height: 575px;
+    }
+    .swiper-container-hero2 .swiper-pagination .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+    }
+    .swiper-container-hero2 .swiper-pagination {
+        width: 70px;
+    }
+    .swiper-container-hero2 .swiper-button-next::after, .swiper-container-hero2 .swiper-button-prev::after {
+        font-size: 18px;
+    }
+    .swiper-container-hero2 .swiper-button-next, .swiper-container-hero2 .swiper-button-prev {
+        bottom: -1px;
+    }
+    .swiper-container-hero2 .swiper-button-next {
+        left: 134px;
+    }
 }
 @media (max-width: 375px) {
-    .swiper-pagination-hero1 {
-        width: 80px !important;
-        left: 40px !important;
-    }
-    .swiper-button-next-hero1 {
-        left: 127px;
-    }
-    .slide-hero1-left, .slide-hero1-right {
-        padding-top: 15px;
-        height: 515px;
-        justify-content: flex-start;
-    }
     .contacts__content-item, .callback__form-btn {
         width: 100%;
     }
@@ -720,13 +704,14 @@
         font-size: 18px;
         line-height: 22px;
     }
-    .slide-hero1-left-btns {
-        width: 75%;
+    .hero2__left-info {
+        justify-content: flex-start;
+        padding-top: 20px;
     }
-    .slide-hero1-left-item {
-        width: 100%;
+    .hero2__left, .hero2__right {
+        height: 515px;
     }
-    .slide-hero1-left {
-        width: 40%;
+    .hero2__left-btn {
+        font-size: 12px;
     }
 }
