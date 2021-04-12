@@ -403,6 +403,14 @@
     }
 }
 @media (max-width: 768px) {
+    .popup {
+        width: 400px;
+        height: 400px;
+        padding: 58px 50px 55px 50px;
+    }
+    .popup__title {
+        font-size: 26px;
+    }
     .sliders1__square {
         height: 320px;
     }
@@ -676,6 +684,22 @@
     }
 }
 @media (max-width: 530px) {
+    .popup {
+        width: 80%;
+        height: 300px;
+        padding: 48px 30px 55px 30px;
+    }
+    .popup__title {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    .popup__form {
+        margin-bottom: 25px;
+    }
+    .popup__btn {
+        padding: 10px 0;
+        font-size: 18px;
+    }
     .sliders1__long {
         height: 110px;
     }
@@ -777,6 +801,18 @@
     }
 }
 @media (max-width: 375px) {
+    .popup__form-input:placeholder-shown {
+        font-size: 15px;
+    }
+    .popup__form-input {
+        font-size: 15px;
+    }
+    .popup__title {
+        font-size: 17px;
+    }
+    .popup__form-input-span {
+        font-size: 14px;
+    }
     .sliders1__long {
         height: 70px;
     }

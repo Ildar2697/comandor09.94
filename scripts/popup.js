@@ -1,8 +1,16 @@
 let popupWrapper = document.querySelector('.popup__wrapper');
+let popupTitle = document.querySelector('.popup__title');
+// let theme
 
-function showPopup() {
-    document.querySelector('body').classList.add('body-lock')
+
+function showPopup(title, theme) {
+    console.log(theme);
+    popupTitle.innerHTML = title;
+    document.querySelector('body').classList.add('body-lock');
     popupWrapper.classList.add('popup__wrapper-active');
+    document.querySelector('.popup__form-name').innerHTML = '';
+    document.querySelector('.popup__form-tel').innerHTML = '';
+
 };
 function closePopup() {
     popupWrapper.classList.remove('popup__wrapper-active');
@@ -12,6 +20,7 @@ function checkInputs() {
     let err = 0;
     let name = document.querySelector('.popup__form-name');
     let tel = document.querySelector('.popup__form-tel');
+    let theme = document.querySelector('.popup__title').innerHTML;
     let nameValue = name.value;
     let telValue = tel.value;
     if (nameValue === '') {
@@ -25,6 +34,26 @@ function checkInputs() {
         tel.parentElement.classList.add('input-active');
     } else {
         tel.parentElement.classList.remove('input-active');
+    }
+    if (err == 0) {
+            let method = 'POST';
+            let url = '../ajax/fos_popup.php'
+            let xhttp = new XMLHttpRequest();
+
+            let data = 'name=' + nameValue + '&phone' + telValue + '&theme' + theme;
+            console.log(data)
+            tel.value = '';
+            name.value = '';
+        //     xhttp.open(method, url);
+        //     xhttp.onreadystatechange = function() {
+        //     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+        //         console.log(data);
+        //         console.log(theme)
+        //     } else {
+        //         console.log('error')
+        //     };
+        // }
+        // xhttp.send(data)
     }
 }
 let popupContent = document.querySelector('.popup');
