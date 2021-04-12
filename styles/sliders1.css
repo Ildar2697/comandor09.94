@@ -57,3 +57,27 @@
     color: #EE3D48;
     border-bottom: 1px solid #EE3D48;
 }
+.sliders__options {
+    display: flex;
+}
+.sliders__options-1 {
+    margin-right: 50px;
+}
+.sliders__option {
+    font-family: 'montserratmedium';
+    font-size: 26px;
+    transition: all 0.3s ease-in-out;
+}
+.sliders__option-active {
+    position: relative;
+    color: #EE3D48;
+}
+.sliders__option-active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #EE3D48;
+}

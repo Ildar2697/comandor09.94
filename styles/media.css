@@ -1,4 +1,7 @@
 @media (max-width: 1400px) {
+    .sliders__header-wrapper {
+        padding: 0;
+    }
     .sliders {
         padding: 0 20px;
     }
@@ -159,6 +162,9 @@
     }
     .sliders1__square {
         width: 45%;
+    }
+    .sliders__header-wrapper {
+        padding: 0;
     }
 }
 @media (max-width: 1200px) {
@@ -662,6 +668,9 @@
     .up-btn-img {
         width: 50px;
     }
+    .sliders__header-wrapper {
+        padding: 0;
+    }
 }
 @media (max-width: 530px) {
     .sliders1__long {
@@ -759,6 +768,9 @@
     }
     .swiper-container-hero2 .swiper-button-next {
         left: 134px;
+    }
+    .sliders__header-wrapper {
+        padding: 0;
     }
 }
 @media (max-width: 375px) {

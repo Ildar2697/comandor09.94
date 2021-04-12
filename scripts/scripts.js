@@ -111,8 +111,31 @@ const swiperHero2 = new Swiper('.swiper-container-hero2', {
   })
 
 
-  let headerList = document.querySelector('.header__list');
+  let slidersSlider1 = document.querySelector('.sliders1-container-1');
+  let slidersSlider2 = document.querySelector('.sliders1-container-2');
+  let slidersSelectOption1 = document.querySelector('.sliders__options-1');
+  let slidersSelectOption2 = document.querySelector('.sliders__options-2');
 
+
+  slidersSlider2.style.display = 'none';
+
+  function selectSlider(slider, sliderHide, optionHide, optionShow) {
+      slider.style.display = 'block';
+      sliderHide.style.display = 'none';
+      optionHide.classList.remove('sliders__option-active');
+      optionShow.classList.add('sliders__option-active');
+  }
+
+  slidersSelectOption1.addEventListener('click', function() {
+      selectSlider(slidersSlider1, slidersSlider2, slidersSelectOption2, slidersSelectOption1);
+  });
+  slidersSelectOption2.addEventListener('click', function() {
+      selectSlider(slidersSlider2, slidersSlider1, slidersSelectOption1, slidersSelectOption2);
+  });
+// })
+
+
+  let headerList = document.querySelector('.header__list');
   headerList.addEventListener('click', function(event) {
     if (event.target.classList.contains('header__item-link')) {
       event.preventDefault()
