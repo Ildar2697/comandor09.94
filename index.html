@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="styles/stocks.css">
     <link rel="stylesheet" href="styles/catalog.css">
     <link rel="stylesheet" href="styles/header.css">
-    <!-- <link rel="stylesheet" href="styles/hero1.css"> -->
-    <!-- <link rel="stylesheet" href="styles/menu.css"> -->
+    <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/media.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
     </script>
@@ -62,8 +61,80 @@
                 <a class="header__contacts-callback" href="#">Перезвонить мне</a>
             </div>
         </div>
-        <!-- <div class="menu"></div> -->
     </header>
+
+    <div class="menu">
+        <div class="menu-wrapper">
+            <img class="menu__close-btn" src="images/menu__close-btn.svg" alt="close">
+            <div class="menu__expanded-title"></div>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#catalog" class="menu__item-link">Каталог</a></li>
+                <li class="menu__item"><a href="#materials" class="menu__item-link">Материалы</a></li>
+                <li class="menu__item"><a href="#forDesigners" class="menu__item-link">Дизайнерам</a></li>
+                <li class="menu__item"><a href="#topics" class="menu__item-link">Статьи</a></li>
+                <li class="menu__item"><a href="#review" class="menu__item-link">Отзывы</a></li>
+            </ul>
+            <ul class="menu__expanded-list" id="catalog">
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Шкафы-купе</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Спальня</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Гостиная</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Детская</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Прихожая</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Офис</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Мансарда</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Гардеробные</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Кухни</a></li>
+                <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Подвесные двери-купе</a></li>
+            </ul>
+            <ul class="menu__expanded-list" id="materials">
+                <li class="menu__list-expanded-item">materials1</li>
+                <li class="menu__list-expanded-item">materials2</li>
+                <li class="menu__list-expanded-item">materials3</li>
+                <li class="menu__list-expanded-item">materials4</li>
+                <li class="menu__list-expanded-item">materials5</li>
+                <li class="menu__list-expanded-item">materials6</li>
+                <li class="menu__list-expanded-item">materials7</li>
+                <li class="menu__list-expanded-item">materials8</li>
+                <li class="menu__list-expanded-item">materials9</li>
+                <li class="menu__list-expanded-item">materials10</li>
+            </ul>
+            <!-- <div class="menu__expanded">
+                <div class="menu__expanded-title"></div>
+                <ul class="menu__expanded-list" id="catalog">
+                    <li class="menu__list-expanded-item">Шкафы-купе</li>
+                    <li class="menu__list-expanded-item">Спальня</li>
+                    <li class="menu__list-expanded-item">Гостиная</li>
+                    <li class="menu__list-expanded-item">Детская</li>
+                    <li class="menu__list-expanded-item">Прихожая</li>
+                    <li class="menu__list-expanded-item">Офис</li>
+                    <li class="menu__list-expanded-item">Мансарда</li>
+                    <li class="menu__list-expanded-item">Гардеробная</li>
+                    <li class="menu__list-expanded-item">Кухни</li>
+                    <li class="menu__list-expanded-item">Подвесные двери-купе</li>
+                </ul>
+                <ul class="menu__expanded-list" id="materials">
+                    <li class="menu__list-expanded-item">materials1</li>
+                    <li class="menu__list-expanded-item">materials2</li>
+                    <li class="menu__list-expanded-item">materials3</li>
+                    <li class="menu__list-expanded-item">materials4</li>
+                    <li class="menu__list-expanded-item">materials5</li>
+                    <li class="menu__list-expanded-item">materials6</li>
+                    <li class="menu__list-expanded-item">materials7</li>
+                    <li class="menu__list-expanded-item">materials8</li>
+                    <li class="menu__list-expanded-item">materials9</li>
+                    <li class="menu__list-expanded-item">materials10</li>
+                </ul>
+            </div> -->
+            <div class="menu__socials">
+                <div class="menu__socials-text">Мы в социальных сетях</div>
+                <div class="menu__socials-list">
+                    <a class="menu__socials-item" href="#"><img class="menu__socials-item-img" src="images/footer__vk.svg" alt="pic"></a>
+                    <a class="menu__socials-item" href="#"><img class="menu__socials-item-img" src="images/footer__inst.svg" alt="pic"></a>
+                    <a class="menu__socials-item" href="#"><img class="menu__socials-item-img" src="images/footer__fb.svg" alt="pic"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main class="main">
         <a class="up-btn">
@@ -73,77 +144,30 @@
                 <path class="up-btn-img-path" d="M50 74V27M50 27L35 42M50 27L65 42" stroke-width="2"/>
             </svg>
         </a>
-
-        <!-- <div class="hero1 mb180">
-            <div class="container">
-                <div class="swiper-container swiper-container-hero1">
-                    <div class="swiper-wrapper swiper-wrapper-hero1">
-                    <div class="swiper-slide swiper-slide-hero1">
-                        <div class="slide-hero1-left">
-                            <div class="slide-hero1-left-title title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
-                            <div class="slide-hero1-left-list">
-                                <div class="slide-hero1-left-item">Замер и установка <span class="slide-hero1-span">БЕСПЛАТНО</span></div>
-                                <div class="slide-hero1-left-item">Рассрочка <span class="slide-hero1-span">без</span> переплат</div>
-                                <div class="slide-hero1-left-item"><span class="slide-hero1-span">30 лет</span> гарантии</div>
-                            </div>
-                            <div class="slide-hero1-left-btns">
-                                <button class="hero1-left-cost hero1-btn">Рассчитать стоимость</button>
-                                <button class="hero1-left-order hero1-btn">Записаться на замер</button>
-                            </div>
-                        </div>
-                        <div class="slide-hero1-right"></div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-hero1">
-                        <div class="slide-hero1-left">
-                            <div class="slide-hero1-left-title title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
-                            <div class="slide-hero1-left-list">
-                                <div class="slide-hero1-left-item">Замер и установка <span class="slide-hero1-span">БЕСПЛАТНО</span></div>
-                                <div class="slide-hero1-left-item">Рассрочка <span class="slide-hero1-span">без</span> переплат</div>
-                                <div class="slide-hero1-left-item"><span class="slide-hero1-span">30 лет</span> гарантии</div>
-                            </div>
-                            <div class="slide-hero1-left-btns">
-                                <button class="hero1-left-cost hero1-btn">Рассчитать стоимость</button>
-                                <button class="hero1-left-order hero1-btn">Записаться на замер</button>
+        <div class="hero2 mb180">
+            <div class="hero2-wrapper">
+                <div class="swiper-container swiper-container-hero2">
+                    <div class="swiper-wrapper swiper-wrapper-hero2">
+                    <div class="swiper-slide swiper-slide-hero2">
+                        <div class="hero2__left">
+                            <div class="hero2__left-info">
+                                <div class="hero2__left-title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
+                                <div class="hero2__left-list">
+                                    <div class="hero2__left-item">Замер и установка <span class="hero2__left-item-span">БЕСПЛАТНО</span></div>
+                                    <div class="hero2__left-item">Рассрочка <span class="hero2__left-item-span">без</span> переплат</div>
+                                    <div class="hero2__left-item"><span class="hero2__left-item-span">30 лет</span> гарантии</div>
+                                </div>
+                                <div class="hero2__left-btns">
+                                    <button class="hero2__left-cost hero2__left-btn">Рассчитать стоимость</button>
+                                    <button class="hero2__left-order hero2__left-btn">Записаться на замер</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="slide-hero1-right"></div>
+                        <div class="hero2__right"></div>
                     </div>
-                    <div class="swiper-slide swiper-slide-hero1">
-                        <div class="slide-hero1-left">
-                            <div class="slide-hero1-left-title title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
-                            <div class="slide-hero1-left-list">
-                                <div class="slide-hero1-left-item">Замер и установка <span class="slide-hero1-span">БЕСПЛАТНО</span></div>
-                                <div class="slide-hero1-left-item">Рассрочка <span class="slide-hero1-span">без</span> переплат</div>
-                                <div class="slide-hero1-left-item"><span class="slide-hero1-span">30 лет</span> гарантии</div>
-                            </div>
-                            <div class="slide-hero1-left-btns">
-                                <button class="hero1-left-cost hero1-btn">Рассчитать стоимость</button>
-                                <button class="hero1-left-order hero1-btn">Записаться на замер</button>
-                            </div>
-                        </div>
-                        <div class="slide-hero1-right"></div>
-                    </div>
-                    ...
-                    </div>
-                    <div class="swiper-pagination-hero1 swiper-pagination"></div>
-                
-                    <div class="swiper-button-prev-hero1 swiper-button-prev"></div>
-                    <div class="swiper-button-next-hero1 swiper-button-next"></div>
-                
-                    <div class="swiper-scrollbar swiper-scrollbar-hero1"></div>
-                </div>
-            </div>
-        </div> -->
-
-    <div class="hero2 mb180">
-        <div class="hero2-wrapper">
-            <div class="swiper-container swiper-container-hero2">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper swiper-wrapper-hero2">
-                  <!-- Slides -->
-                  <div class="swiper-slide swiper-slide-hero2">
-                      <div class="hero2__left">
-                          <div class="hero2__left-info">
+                    <div class="swiper-slide swiper-slide-hero2">
+                        <div class="hero2__left">
+                            <div class="hero2__left-info">
                             <div class="hero2__left-title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
                             <div class="hero2__left-list">
                                 <div class="hero2__left-item">Замер и установка <span class="hero2__left-item-span">БЕСПЛАТНО</span></div>
@@ -154,245 +178,280 @@
                                 <button class="hero2__left-cost hero2__left-btn">Рассчитать стоимость</button>
                                 <button class="hero2__left-order hero2__left-btn">Записаться на замер</button>
                             </div>
+                            </div>
+                        </div>
+                        <div class="hero2__right"></div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-hero2">
+                        <div class="hero2__left">
+                            <div class="hero2__left-info">
+                            <div class="hero2__left-title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
+                            <div class="hero2__left-list">
+                                <div class="hero2__left-item">Замер и установка <span class="hero2__left-item-span">БЕСПЛАТНО</span></div>
+                                <div class="hero2__left-item">Рассрочка <span class="hero2__left-item-span">без</span> переплат</div>
+                                <div class="hero2__left-item"><span class="hero2__left-item-span">30 лет</span> гарантии</div>
+                            </div>
+                            <div class="hero2__left-btns">
+                                <button class="hero2__left-cost hero2__left-btn">Рассчитать стоимость</button>
+                                <button class="hero2__left-order hero2__left-btn">Записаться на замер</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="hero2__right"></div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-hero2">
+                        <div class="hero2__left">
+                            <div class="hero2__left-info">
+                            <div class="hero2__left-title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
+                            <div class="hero2__left-list">
+                                <div class="hero2__left-item">Замер и установка <span class="hero2__left-item-span">БЕСПЛАТНО</span></div>
+                                <div class="hero2__left-item">Рассрочка <span class="hero2__left-item-span">без</span> переплат</div>
+                                <div class="hero2__left-item"><span class="hero2__left-item-span">30 лет</span> гарантии</div>
+                            </div>
+                            <div class="hero2__left-btns">
+                                <button class="hero2__left-cost hero2__left-btn">Рассчитать стоимость</button>
+                                <button class="hero2__left-order hero2__left-btn">Записаться на замер</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="hero2__right"></div>
+                    </div>
+                    </div>
+
+                    <div class="swiper-pagination swiper-pagination-hero2"></div>
+                
+                    <div class="swiper-button-prev swiper-button-prev-hero2"></div>
+                    <div class="swiper-button-next swiper-button-next-hero2"></div>
+                
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalogies mb180">
+            <div class="container">
+                <div class="catalog__title title mb35" id="catalog">Каталог</div>
+                <div class="catalogies-wrapper">
+                    <div class="catalogies-1">
+                        <div class="catalogies-1-1 catalog-item">
+                            <div class="cat-text">Гардеробные</div>
+                        </div>
+                        <div class="catalogies-1-2 catalog-item">
+                            <div class="cat-text">Кухни</div>
+                        </div>
+                    </div>
+                    <div class="catalogies-2 catalog-item">
+                        <div class="cat-text">Шкафы-купе</div>
+                    </div>
+                </div>
+                <div class="catalogies-wrapper">
+                    <div class="catalogies-3">
+                        <div class="catalogies-3-1 catalogies-3-child catalog-item">
+                            <div class="cat-text">Офис</div>
+                        </div>
+                        <div class="catalogies-3-2 catalogies-3-child catalog-item">
+                            <div class="cat-text">Детская</div>
+                        </div>
+                        <div class="catalogies-3-3 catalogies-3-child catalog-item">
+                            <div class="cat-text">Прихожая</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stocks mb180">
+            <div class="stocks-wrapper">
+                <div class="stocks__left"></div>
+                <div class="stocks__right">
+                    <div id="stocks" class="stocks__right-title title">Акция</div>
+                    <div class="stocks__right-text m300-s24-l36 mb35">Cкидки до 25% на все товары из категории Кухня</div>
+                    <button class="stocks__right-button btn-p-25-71">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sliders mb180">
+            <div class="sliders__wrapper">
+                <div class="swiper-container sliders1-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide sliders1-swiper-slide-wrapper">
+                          <div class="sliders1__square"></div>
+                          <div class="sliders1__long"></div>
+                          <div class="sliders1__info">
+                              <div class="sliders1__info-title">Январь 2021</div>
+                              <div class="sliders1__info-text">Разработка дизайна мебели с учетом всех размеров. Проектирование и визуализация для нового офиса в центре города, доставка и сборка всех комплектующих.</div>
+                              <a class="sliders1__info-link" href="#">Подробнее</a>
                           </div>
                       </div>
-                      <div class="hero2__right"></div>
-                  </div>
-                  <div class="swiper-slide swiper-slide-hero2">
-                    <div class="hero2__left">
-                        <div class="hero2__left-info">
-                          <div class="hero2__left-title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
-                          <div class="hero2__left-list">
-                              <div class="hero2__left-item">Замер и установка <span class="hero2__left-item-span">БЕСПЛАТНО</span></div>
-                              <div class="hero2__left-item">Рассрочка <span class="hero2__left-item-span">без</span> переплат</div>
-                              <div class="hero2__left-item"><span class="hero2__left-item-span">30 лет</span> гарантии</div>
-                          </div>
-                          <div class="hero2__left-btns">
-                              <button class="hero2__left-cost hero2__left-btn">Рассчитать стоимость</button>
-                              <button class="hero2__left-order hero2__left-btn">Записаться на замер</button>
-                          </div>
+                      <div class="swiper-slide sliders1-swiper-slide-wrapper">
+                        <div class="sliders1__square"></div>
+                        <div class="sliders1__long"></div>
+                        <div class="sliders1__info">
+                            <div class="sliders1__info-title">Январь 2021</div>
+                            <div class="sliders1__info-text">Разработка дизайна мебели с учетом всех размеров. Проектирование и визуализация для нового офиса в центре города, доставка и сборка всех комплектующих.</div>
+                            <a class="sliders1__info-link" href="#">Подробнее</a>
                         </div>
-                    </div>
-                    <div class="hero2__right"></div>
-                  </div>
-                  <div class="swiper-slide swiper-slide-hero2">
-                    <div class="hero2__left">
-                        <div class="hero2__left-info">
-                          <div class="hero2__left-title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
-                          <div class="hero2__left-list">
-                              <div class="hero2__left-item">Замер и установка <span class="hero2__left-item-span">БЕСПЛАТНО</span></div>
-                              <div class="hero2__left-item">Рассрочка <span class="hero2__left-item-span">без</span> переплат</div>
-                              <div class="hero2__left-item"><span class="hero2__left-item-span">30 лет</span> гарантии</div>
-                          </div>
-                          <div class="hero2__left-btns">
-                              <button class="hero2__left-cost hero2__left-btn">Рассчитать стоимость</button>
-                              <button class="hero2__left-order hero2__left-btn">Записаться на замер</button>
-                          </div>
+                      </div>
+                      <div class="swiper-slide sliders1-swiper-slide-wrapper">
+                        <div class="sliders1__square"></div>
+                        <div class="sliders1__long"></div>
+                        <div class="sliders1__info">
+                            <div class="sliders1__info-title">Январь 2021</div>
+                            <div class="sliders1__info-text">Разработка дизайна мебели с учетом всех размеров. Проектирование и визуализация для нового офиса в центре города, доставка и сборка всех комплектующих.</div>
+                            <a class="sliders1__info-link" href="#">Подробнее</a>
                         </div>
-                    </div>
-                    <div class="hero2__right"></div>
-                  </div>
-                  <div class="swiper-slide swiper-slide-hero2">
-                    <div class="hero2__left">
-                        <div class="hero2__left-info">
-                          <div class="hero2__left-title">Выполним проект любой сложности индивидуально под ваш интерьер</div>
-                          <div class="hero2__left-list">
-                              <div class="hero2__left-item">Замер и установка <span class="hero2__left-item-span">БЕСПЛАТНО</span></div>
-                              <div class="hero2__left-item">Рассрочка <span class="hero2__left-item-span">без</span> переплат</div>
-                              <div class="hero2__left-item"><span class="hero2__left-item-span">30 лет</span> гарантии</div>
-                          </div>
-                          <div class="hero2__left-btns">
-                              <button class="hero2__left-cost hero2__left-btn">Рассчитать стоимость</button>
-                              <button class="hero2__left-order hero2__left-btn">Записаться на замер</button>
-                          </div>
+                      </div>
+                      <div class="swiper-slide sliders1-swiper-slide-wrapper">
+                        <div class="sliders1__square"></div>
+                        <div class="sliders1__long"></div>
+                        <div class="sliders1__info">
+                            <div class="sliders1__info-title">Январь 2021</div>
+                            <div class="sliders1__info-text">Разработка дизайна мебели с учетом всех размеров. Проектирование и визуализация для нового офиса в центре города, доставка и сборка всех комплектующих.</div>
+                            <a class="sliders1__info-link" href="#">Подробнее</a>
                         </div>
+                      </div>
+                      ...
                     </div>
-                    <div class="hero2__right"></div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                   </div>
-                </div>
-
-                <div class="swiper-pagination swiper-pagination-hero2"></div>
-              
-                <div class="swiper-button-prev swiper-button-prev-hero2"></div>
-                <div class="swiper-button-next swiper-button-next-hero2"></div>
-              
-                <div class="swiper-scrollbar"></div>
-              </div>
+            </div>
         </div>
-    </div>
 
-    <div class="catalogies mb180">
-        <div class="container">
-            <div class="catalog__title title mb35" id="catalog">Каталог</div>
-            <div class="catalogies-wrapper">
-                <div class="catalogies-1">
-                    <div class="catalogies-1-1 catalog-item">
-                        <div class="cat-text">Гардеробные</div>
+        <div class="ideas ideas-wrapper mb180">
+            <div class="ideas__left"></div>
+            <div class="ideas__right">
+                <div class="ideas__title" id="projects">
+                    <div class="ideas__title-1 m500-s36-l44">Ваши идеи</div>
+                    <img class="ideas__title-2" alt="arrow" src="images/projects__bottom-arrow.svg">
+                    <div class="ideas__title-3 m500-s36-l44">Наша работа</div>
+                </div>
+                <div class="ideas__text m300-s24-l36">Cкидки до 25% на все товары из категории Кухня</div>
+                <button class="ideas__btn btn-p-25-71">Подробнее</button>
+            </div>
+        </div>
+
+
+        <div class="about about-wrapper mb180">
+            <div class="about__left">
+                <div class="about__title title" id="about">О нас</div>
+                <div class="about__text m300-s24-l36">Командор - официальный дистрибьютор и эксклюзивный представитель международной марки Komandor в России. 25 лет на рынке, представительства в более, чем 11 странах мира, в России работает более 400 торговых точек и 40 сертифицированных производств</div>
+            </div>
+            <div class="about__right"></div>
+        </div>
+
+        <div class="advantages mb180">
+            <div class="container">
+                <h2 class="advantages__title title mb35">Преимущества</h2>
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <p class="advantages__item-text m500-s24-s29">Высочайшее качество и долговечность</p>
+                            <span class="advantages__item-span">01</span>
+                        </li>
+                        <li class="advantages__item">
+                            <p class="advantages__item-text m500-s24-s29">Собственное производство</p>
+                            <span class="advantages__item-span">02</span>
+                        </li>
+                        <li class="advantages__item">
+                            <p class="advantages__item-text m500-s24-s29">Экологически чистые материалы</p>
+                            <span class="advantages__item-span">03</span>
+                        </li>
+                        <li class="advantages__item">
+                            <p class="advantages__item-text m500-s24-s29">Современный дизайн с учетом индивидуальных потребностей каждого</p>
+                            <span class="advantages__item-span">04</span>
+                        </li>
+                        <li class="advantages__item">
+                            <p class="advantages__item-text m500-s24-s29">Широкий ассортимент высококлассной мебели и комплектующих  </p>
+                            <span class="advantages__item-span">05</span>
+                        </li>
+                        <li class="advantages__item">
+                            <p class="advantages__item-text m500-s24-s29">Уникальный запатентованный механизм ролика</p>
+                            <span class="advantages__item-span">06</span>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="callback mb180">
+            <div class="container callback-wrapper">
+                <div class="callback__title title">Закажите бесплатный расчет прямо сейчас</div>
+                <div class="callback__text">Хотите узнать стоимость и получить дизайн проект?</div>
+                <div class="callback__form">
+                    <div class="callback__form-input-wrapper callback__form-input-wrapper-name">
+                        <input type="text" class="callback__form-input callback__form-name">
+                        <span class="callback__form-input-wrapper-span">Ваше имя</span>
                     </div>
-                    <div class="catalogies-1-2 catalog-item">
-                        <div class="cat-text">Кухни</div>
+                    <div class="callback__form-input-wrapper callback__form-input-wrapper-tel">
+                        <input type="text" class="callback__form-input callback__form-tel">
+                        <span class="callback__form-input-wrapper-span">Ваш телефон</span>
                     </div>
-                </div>
-                <div class="catalogies-2 catalog-item">
-                    <div class="cat-text">Шкафы-купе</div>
-                </div>
-            </div>
-            <div class="catalogies-wrapper">
-                <div class="catalogies-3">
-                    <div class="catalogies-3-1 catalogies-3-child catalog-item">
-                        <div class="cat-text">Офис</div>
+                    <div class="callback__form-input-wrapper callback__form-select">
+                        <select class="callback__select">
+                            <option class="callback__select-option">Какая мебель вас интересует?</option>
+                            <option class="callback__select-option">Шкафы-купе</option>
+                            <option class="callback__select-option">Кухни</option>
+                            <option class="callback__select-option">Диваны</option>
+                        </select>
                     </div>
-                    <div class="catalogies-3-2 catalogies-3-child catalog-item">
-                        <div class="cat-text">Детская</div>
+                    <button class="callback__form-btn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts contacts-wrapper">
+            <div class="map-wrapper">
+                <div id="map"></div>
+            </div>
+            <div class="contacts__info">
+                <div class="contacts__title title" id="contacts">Контакты</div>
+                <div class="contacts__content">
+                    <div class="contacts__content-text">Адреса салонов в Уфе</div>
+                    <ul class="contacts__content-list">
+                        <li class="contacts__content-item">
+                            <div class="contacts__content-address m500-s24-l36 fs-0">ул. Менделеева, 158,</div>
+                            <div class="contacts__content-building m300-s24-l36 contacts__item fs-0">ВДНХ Экспо</div>
+                            <div class="contacts__content-time m300-s24-l36 contacts__item fs-0"> Ежедневно с 10:00 до 20:00</div>
+                            <a href="tel:+73472744400" class="contacts__content-tel m300-s24-l36 contacts__item fs-0">+7 (347) 274-44-00</a>
+                        </li>
+                        <li class="contacts__content-item">
+                            <div class="contacts__content-address m500-s24-l36 fs-0">ул. Менделеева, 21,</div>
+                            <div class="contacts__content-building m300-s24-l36 contacts__item fs-0">ТЦ«Аркаим Экспо»</div>
+                            <div class="contacts__content-time m300-s24-l36 contacts__item fs-0">  Пн-пт с 11:00 до 20:00<br>Воск. с 11:00 до 19:00</div>
+                            <a href="tel:+73472569377" class="contacts__content-tel m300-s24-l36 contacts__item fs-0">+7 (347) 256-93-77</a>
+                        </li>
+                        <li class="contacts__content-item">
+                            <div class="contacts__content-address m500-s24-l36 fs-0">Проспект Октября, 144,</div>
+                            <div class="contacts__content-time m300-s24-l36 contacts__item fs-0">Ежедневно с 10:00 до 20:00</div>
+                            <a href="tel:+73472848262" class="contacts__content-tel m300-s24-l36 contacts__item fs-0">+7 (347) 284-82-62</a>
+                        </li>
+                        <li class="contacts__content-item">
+                            <div class="contacts__content-address m500-s24-l36 fs-0">ул. Рудольфа Нуреева, 10,</div>
+                            <div class="contacts__content-time m300-s24-l36 contacts__item fs-0">Ежедневно с 10:00 до 20:00</div>
+                            <a href="tel:+73472848262" class="contacts__content-tel m300-s24-l36 contacts__item fs-0">+7 (927) 950-05-11</a>
+                        </li>
+                    </ul>
+                    <div class="contacts__content-links">
+                        <a class="contacts__content-link-route contacts__content-link">
+                            <img class="contacts__content-link-pic" src="images/contacts__route.svg" alt="Route">
+                            <div class="contacts__content-link-text">Проложить маршрут</div>
+                        </a>
+                        <a class="contacts__content-link-route contacts__content-link">
+                            <img class="contacts__content-link-pic" src="images/contacts__taxi.svg" alt="Taxi">
+                            <div class="contacts__content-link-text">Вызвать такси</div>
+                        </a>
                     </div>
-                    <div class="catalogies-3-3 catalogies-3-child catalog-item">
-                        <div class="cat-text">Прихожая</div>
-                    </div>
+                    <button class="contacts__content-btn btn-p-25-71">Подробнее</button>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="stocks mb180">
-        <div class="stocks-wrapper">
-            <div class="stocks__left"></div>
-            <div class="stocks__right">
-                <div id="stocks" class="stocks__right-title title">Акция</div>
-                <div class="stocks__right-text m300-s24-l36 mb35">Cкидки до 25% на все товары из категории Кухня</div>
-                <button class="stocks__right-button btn-p-25-71">Подробнее</button>
-            </div>
-        </div>
-    </div>
-
-   
-
-    <div class="ideas ideas-wrapper mb180">
-        <div class="ideas__left"></div>
-        <div class="ideas__right">
-            <div class="ideas__title" id="projects">
-                <div class="ideas__title-1 m500-s36-l44">Ваши идеи</div>
-                <img class="ideas__title-2" alt="arrow" src="images/projects__bottom-arrow.svg">
-                <div class="ideas__title-3 m500-s36-l44">Наша работа</div>
-            </div>
-            <div class="ideas__text m300-s24-l36">Cкидки до 25% на все товары из категории Кухня</div>
-            <button class="ideas__btn btn-p-25-71">Подробнее</button>
-        </div>
-    </div>
-
-
-    <div class="about about-wrapper mb180">
-        <div class="about__left">
-            <div class="about__title title" id="about">О нас</div>
-            <div class="about__text m300-s24-l36">Командор - официальный дистрибьютор и эксклюзивный представитель международной марки Komandor в России. 25 лет на рынке, представительства в более, чем 11 странах мира, в России работает более 400 торговых точек и 40 сертифицированных производств</div>
-        </div>
-        <div class="about__right"></div>
-    </div>
-
-    <div class="advantages mb180">
-        <div class="container">
-            <h2 class="advantages__title title mb35">Преимущества</h2>
-                <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <p class="advantages__item-text m500-s24-s29">Высочайшее качество и долговечность</p>
-                        <span class="advantages__item-span">01</span>
-                    </li>
-                    <li class="advantages__item">
-                        <p class="advantages__item-text m500-s24-s29">Собственное производство</p>
-                        <span class="advantages__item-span">02</span>
-                    </li>
-                    <li class="advantages__item">
-                        <p class="advantages__item-text m500-s24-s29">Экологически чистые материалы</p>
-                        <span class="advantages__item-span">03</span>
-                    </li>
-                    <li class="advantages__item">
-                        <p class="advantages__item-text m500-s24-s29">Современный дизайн с учетом индивидуальных потребностей каждого</p>
-                        <span class="advantages__item-span">04</span>
-                    </li>
-                    <li class="advantages__item">
-                        <p class="advantages__item-text m500-s24-s29">Широкий ассортимент высококлассной мебели и комплектующих  </p>
-                        <span class="advantages__item-span">05</span>
-                    </li>
-                    <li class="advantages__item">
-                        <p class="advantages__item-text m500-s24-s29">Уникальный запатентованный механизм ролика</p>
-                        <span class="advantages__item-span">06</span>
-                    </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class="callback mb180">
-        <div class="container callback-wrapper">
-            <div class="callback__title title">Закажите бесплатный расчет прямо сейчас</div>
-            <div class="callback__text">Хотите узнать стоимость и получить дизайн проект?</div>
-            <div class="callback__form">
-                <div class="callback__form-input-wrapper callback__form-input-wrapper-name">
-                    <input type="text" class="callback__form-input callback__form-name">
-                    <span class="callback__form-input-wrapper-span">Ваше имя</span>
-                </div>
-                <div class="callback__form-input-wrapper callback__form-input-wrapper-tel">
-                    <input type="text" class="callback__form-input callback__form-tel">
-                    <span class="callback__form-input-wrapper-span">Ваш телефон</span>
-                </div>
-                <div class="callback__form-input-wrapper callback__form-select">
-                    <select class="callback__select">
-                        <option class="callback__select-option">Какая мебель вас интересует?</option>
-                        <option class="callback__select-option">Шкафы-купе</option>
-                        <option class="callback__select-option">Кухни</option>
-                        <option class="callback__select-option">Диваны</option>
-                    </select>
-                </div>
-                <button class="callback__form-btn">Подробнее</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="contacts contacts-wrapper">
-        <div class="map-wrapper">
-            <div id="map"></div>
-        </div>
-        <div class="contacts__info">
-            <div class="contacts__title title" id="contacts">Контакты</div>
-            <div class="contacts__content">
-                <div class="contacts__content-text">Адреса салонов в Уфе</div>
-                <ul class="contacts__content-list">
-                    <li class="contacts__content-item">
-                        <div class="contacts__content-address m500-s24-l36 fs-0">ул. Менделеева, 158,</div>
-                        <div class="contacts__content-building m300-s24-l36 contacts__item fs-0">ВДНХ Экспо</div>
-                        <div class="contacts__content-time m300-s24-l36 contacts__item fs-0"> Ежедневно с 10:00 до 20:00</div>
-                        <a href="tel:+73472744400" class="contacts__content-tel m300-s24-l36 contacts__item fs-0">+7 (347) 274-44-00</a>
-                    </li>
-                    <li class="contacts__content-item">
-                        <div class="contacts__content-address m500-s24-l36 fs-0">ул. Менделеева, 21,</div>
-                        <div class="contacts__content-building m300-s24-l36 contacts__item fs-0">ТЦ«Аркаим Экспо»</div>
-                        <div class="contacts__content-time m300-s24-l36 contacts__item fs-0">  Пн-пт с 11:00 до 20:00<br>Воск. с 11:00 до 19:00</div>
-                        <a href="tel:+73472569377" class="contacts__content-tel m300-s24-l36 contacts__item fs-0">+7 (347) 256-93-77</a>
-                    </li>
-                    <li class="contacts__content-item">
-                        <div class="contacts__content-address m500-s24-l36 fs-0">Проспект Октября, 144,</div>
-                        <div class="contacts__content-time m300-s24-l36 contacts__item fs-0">Ежедневно с 10:00 до 20:00</div>
-                        <a href="tel:+73472848262" class="contacts__content-tel m300-s24-l36 contacts__item fs-0">+7 (347) 284-82-62</a>
-                    </li>
-                    <li class="contacts__content-item">
-                        <div class="contacts__content-address m500-s24-l36 fs-0">ул. Рудольфа Нуреева, 10,</div>
-                        <div class="contacts__content-time m300-s24-l36 contacts__item fs-0">Ежедневно с 10:00 до 20:00</div>
-                        <a href="tel:+73472848262" class="contacts__content-tel m300-s24-l36 contacts__item fs-0">+7 (927) 950-05-11</a>
-                    </li>
-                </ul>
-                <div class="contacts__content-links">
-                    <a class="contacts__content-link-route contacts__content-link">
-                        <img class="contacts__content-link-pic" src="images/contacts__route.svg" alt="Route">
-                        <div class="contacts__content-link-text">Проложить маршрут</div>
-                    </a>
-                    <a class="contacts__content-link-route contacts__content-link">
-                        <img class="contacts__content-link-pic" src="images/contacts__taxi.svg" alt="Taxi">
-                        <div class="contacts__content-link-text">Вызвать такси</div>
-                    </a>
-                </div>
-                <button class="contacts__content-btn btn-p-25-71">Подробнее</button>
-            </div>
-        </div>
-    </div>
-
     </main>
 
     <footer class="footer">

@@ -1,4 +1,15 @@
 @media (max-width: 1400px) {
+    .sliders {
+        padding: 0 20px;
+    }
+    .sliders1-container .swiper-slide {
+        margin-left: 0;
+        margin-right: 0;   
+    }
+    .menu {
+        /* width: 500px; */
+        left: 0;
+    }
     .hero2__right {
         width: 55%;
     }
@@ -32,10 +43,10 @@
         margin-left: 0;
         padding-left: 20px;
     }
-    .sliders__wrapper {
+    /* .sliders__wrapper {
         margin: 0;
         padding: 0 20px;
-    }
+    } */
     .header__links-fav {
         margin-right: 10px;
     }
@@ -143,8 +154,29 @@
         bottom: 8px;
         left: 8px;
     }
+    .menu {
+        left: 20px;
+    }
+    .sliders1__square {
+        width: 45%;
+    }
 }
 @media (max-width: 1200px) {
+    .sliders1__square {
+        width: 35%;
+    }
+    .sliders1__info {
+        width: 63%;
+    }
+    .sliders1__long {
+        width: 80%;
+    }
+    .menu {
+        top: 88px;
+    }
+    .main {
+        margin-top: 88px;
+    }
     .hero2__left-btn {
         padding: 20px 14px;
     }
@@ -227,6 +259,9 @@
     }
 }
 @media (max-width: 992px) {
+    .menu {
+        top: 70px;
+    }
     .hero2__left-btns {
         width: 60%;
         flex-direction: column;
@@ -326,8 +361,50 @@
     .btn-p-25-71 {
         font-size: 18px;
     }
+    .sliders1__info-link {
+        font-size: 14px;
+    }
+    .sliders1__info-text {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .sliders1__info-title {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+    .sliders1-container {
+        height: 390px;
+    }
+    .sliders {
+        padding: 0 15px;
+    }
+    .sliders1__square {
+        width: 30%;
+        height: 340px;
+    }
+    .sliders1__long {
+        height: 150px;
+    }
+    .sliders1__info {
+        width: 67%;
+        bottom: 50px;
+    }
 }
 @media (max-width: 768px) {
+    .sliders1__square {
+        height: 320px;
+    }
+    .sliders1-container {
+        height: 365px;
+    }
+    .sliders1__info-title {
+        font-size: 20px;
+    }
+    .sliders1__info-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
     .hero2-wrapper {
         padding-left: 15px;
     }
@@ -587,6 +664,12 @@
     }
 }
 @media (max-width: 530px) {
+    .sliders1__long {
+        height: 110px;
+    }
+    .sliders {
+        padding: 0 10px;
+    }
     .up-btn {
         right: 40px;
         bottom: 20px;
@@ -679,6 +762,9 @@
     }
 }
 @media (max-width: 375px) {
+    .sliders1__long {
+        height: 70px;
+    }
     .contacts__content-item, .callback__form-btn {
         width: 100%;
     }
