@@ -72,7 +72,7 @@ button:hover, button:focus, input:hover, input:focus {
     flex-shrink: 0;
 }
 .up-btn {
-    z-index: 30;
+    z-index: 14;
     position: fixed;
     right: 80px;
     bottom: 80px;

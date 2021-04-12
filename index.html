@@ -59,7 +59,7 @@
             </div>
             <div class="header__contacts">
                 <a class="header__contacts-tel" href="tel:+73472588302">+7 (347) 258 83 02</a>
-                <a class="header__contacts-callback" href="#">Перезвонить мне</a>
+                <a class="header__contacts-callback" href="#" onclick="showPopup('Перезвонить мне','Перезвонить мне')">Перезвонить мне</a>
             </div>
         </div>
     </header>
@@ -75,10 +75,10 @@
                 <li class="menu__item"><a href="#menu-for-designers" class="menu__item-link">Дизайнерам</a></li>
                 <li class="menu__item"><a href="#menu-topics" class="menu__item-link">Статьи</a></li>
                 <li class="menu__item"><a href="#menu-review" class="menu__item-link">Отзывы</a></li>
-                <li class="menu__item"><a href="#review" class="menu__item-link hidden-menu-item">Акции</a></li>
-                <li class="menu__item"><a href="#review" class="menu__item-link hidden-menu-item">Проекты</a></li>
-                <li class="menu__item"><a href="#review" class="menu__item-link hidden-menu-item">О нас</a></li>
-                <li class="menu__item"><a href="#review" class="menu__item-link hidden-menu-item">Контакты</a></li>
+                <li class="menu__item"><a href="#stocks" class="menu__item-link hidden-menu-item">Акции</a></li>
+                <li class="menu__item"><a href="#projects" class="menu__item-link hidden-menu-item">Проекты</a></li>
+                <li class="menu__item"><a href="#about" class="menu__item-link hidden-menu-item">О нас</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__item-link hidden-menu-item">Контакты</a></li>
             </ul>
             <ul class="menu__expanded-list" id="menu-catalog">
                 <li class="menu__list-expanded-item"><a class="expanded-item-link" href="#">Шкафы-купе</a></li>
@@ -300,14 +300,14 @@
                 <div class="stocks__right">
                     <div id="stocks" class="stocks__right-title title">Акция</div>
                     <div class="stocks__right-text m300-s24-l36 mb35">Cкидки до 25% на все товары из категории Кухня</div>
-                    <button class="stocks__right-button btn-p-25-71">Подробнее</button>
+                    <button class="stocks__right-button btn-p-25-71" onclick="showPopup('Подробнее','Акция')">Подробнее</button>
                 </div>
             </div>
         </div>
 
         <div class="sliders mb180">
             <div class="container sliders__header-wrapper">
-                <div class="sliders__title title mb35">Проекты</div>
+                <div class="sliders__title title mb35" id="projects">Проекты</div>
                 <div class="sliders__options mb35">
                     <div class="sliders__options-1 sliders__option sliders__option-active">Для бизнеса</div>
                     <div class="sliders__options-2 sliders__option">Для квартир</div>
@@ -429,7 +429,7 @@
                     <div class="ideas__title-3 m500-s36-l44">Наша работа</div>
                 </div>
                 <div class="ideas__text m300-s24-l36">Cкидки до 25% на все товары из категории Кухня</div>
-                <button class="ideas__btn btn-p-25-71">Подробнее</button>
+                <button class="ideas__btn btn-p-25-71" onclick="showPopup('Подробнее','Ваши идеи')">Подробнее</button>
             </div>
         </div>
 
@@ -542,7 +542,7 @@
                             <div class="contacts__content-link-text">Вызвать такси</div>
                         </a>
                     </div>
-                    <button class="contacts__content-btn btn-p-25-71">Подробнее</button>
+                    <button class="contacts__content-btn btn-p-25-71" onclick="showPopup('Подробнее','Контакты')">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -622,4 +622,5 @@
 <script src="scripts/inputmask.min.js"></script>
 <script src="scripts/scripts.js"></script>
 <script src="scripts/popup.js"></script>
+<script src="scripts/menu.js"></script>
 </html>

@@ -1,7 +1,7 @@
 .menu {
     transform: translateY(-120%);
-    z-index: 4;
-    /* width: 280px; */
+    z-index: 15;
+    overflow: scroll;
     background: #E5E5E5;
     position: fixed;
     top: 98px;
