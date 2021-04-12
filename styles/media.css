@@ -1,4 +1,8 @@
 @media (max-width: 1400px) {
+    .sliders1-container-1 .swiper-button-next, .sliders1-container-1 .swiper-button-prev, .sliders1-container-2 .swiper-button-next, .sliders1-container-2 .swiper-button-prev {
+        top: unset;
+        bottom: 0px;
+    }
     .sliders__header-wrapper {
         padding: 0;
     }
@@ -173,6 +177,9 @@
     }
 }
 @media (max-width: 1200px) {
+    .sliders1-container-1 .swiper-button-next::after, .sliders1-container-1 .swiper-button-prev::after, .sliders1-container-2 .swiper-button-next::after, .sliders1-container-2 .swiper-button-prev::after {
+        font-size: 26px;
+    }
     .sliders1__square {
         width: 35%;
     }
@@ -270,6 +277,9 @@
     }
 }
 @media (max-width: 992px) {
+    .hidden-menu-item {
+        display: block;
+    }
     .menu {
         top: 70px;
     }
@@ -400,6 +410,9 @@
     .sliders1__info {
         width: 67%;
         bottom: 50px;
+    }
+    .sliders__option {
+        font-size: 18px;
     }
 }
 @media (max-width: 768px) {
@@ -684,6 +697,16 @@
     }
 }
 @media (max-width: 530px) {
+    .sliders1-container-1 .swiper-pagination .swiper-pagination-bullet, .sliders1-container-2 .swiper-pagination .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+    }
+    .sliders1-container-1 .swiper-pagination, .sliders1-container-2 .swiper-pagination {
+        bottom: 13px;
+    }
+    .sliders1-container-1 .swiper-pagination .swiper-pagination-bullet, .sliders1-container-2 .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 15px;
+    }
     .popup {
         width: 80%;
         height: 300px;
@@ -799,8 +822,17 @@
     .sliders__header-wrapper {
         padding: 0;
     }
+    .sliders__options-1 {
+        margin-right: 20px;
+    }
 }
 @media (max-width: 375px) {
+    .sliders1-container-1 .swiper-pagination .swiper-pagination-bullet, .sliders1-container-2 .swiper-pagination .swiper-pagination-bullet {
+        margin: 0 10px;
+    }
+    .sliders__option {
+        font-size: 16px;
+    }
     .popup__form-input:placeholder-shown {
         font-size: 15px;
     }
