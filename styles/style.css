@@ -91,3 +91,6 @@ button:hover, button:focus, input:hover, input:focus {
     position: relative;
     margin-top: 98px;
 }
+.body-lock {
+    overflow: hidden;
+}

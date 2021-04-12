@@ -35,6 +35,9 @@ let callbackInputTel = document.querySelector('.callback__form-tel');
 let inputMask = new Inputmask('+7 (999) 999-99-99');
 inputMask.mask(callbackInputTel);
 
+let popupFormTel = document.querySelector('.popup__form-tel');
+let inputMaskPopup = new Inputmask('+7 (999) 999-99-99');
+inputMask.mask(popupFormTel);
 // const swiperHero1 = new Swiper('.swiper-container-hero1', {
 //     direction: 'horizontal',
 //     loop: false,
@@ -182,6 +185,10 @@ const swiperHero2 = new Swiper('.swiper-container-hero2', {
 
   menuBackBtn.addEventListener('click', function() {
     goBackToMenu();
+  });
+
+  document.querySelector('main').addEventListener('click', function() {
+    menu.classList.remove('menu-active')
   })
 
   function goBackToMenu() {
@@ -197,3 +204,4 @@ const swiperHero2 = new Swiper('.swiper-container-hero2', {
       el.style.display = 'none';
     })
   }
+

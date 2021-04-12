@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/catalog.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/popup.css">
     <link rel="stylesheet" href="styles/media.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
     </script>
@@ -146,6 +147,25 @@
         </div>
     </div>
 
+    <div class="popup__wrapper">
+        <div class="popup">
+            <img class="popup__close-img" src="images/menu__close-btn.svg" alt="close">
+            <div class="popup__title">Заказать звонок</div>
+            <div class="popup__form">
+                <div class="popup__form-name-wrapper popup__form-input-wrapper">
+                    <input class="popup__form-name popup__form-input" type="text" placeholder="Ваше имя">
+                    <span class="popup__form-input-span">Заполните пустую форму</span>
+                </div>
+                <div class="popup__form-tel-wrapper popup__form-input-wrapper">
+                    <input class="popup__form-tel popup__form-input" type="text" placeholder="Номер телефона">
+                    <span class="popup__form-input-span">Заполните пустую форму</span>
+                </div>
+            </div>
+            <input type="hidden">
+            <button class="popup__btn">Отправить</button>
+        </div>
+    </div>
+
     <main class="main">
         <a class="up-btn">
             <span class="hidden">Hidden</span>
@@ -169,7 +189,7 @@
                                 </div>
                                 <div class="hero2__left-btns">
                                     <button class="hero2__left-cost hero2__left-btn">Рассчитать стоимость</button>
-                                    <button class="hero2__left-order hero2__left-btn">Записаться на замер</button>
+                                    <button class="hero2__left-order hero2__left-btn" onclick="showPopup()">Записаться на замер</button>
                                 </div>
                             </div>
                         </div>
@@ -597,4 +617,5 @@
 <script src="scripts/choices.min.js"></script>
 <script src="scripts/inputmask.min.js"></script>
 <script src="scripts/scripts.js"></script>
+<script src="scripts/popup.js"></script>
 </html>
