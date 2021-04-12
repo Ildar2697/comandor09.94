@@ -63,7 +63,7 @@ const swiperHero2 = new Swiper('.swiper-container-hero2', {
     },
   });
 
-  const Slider1 = new Swiper('.swiper-container-hero2', {
+  const Slider1 = new Swiper('.sliders1-container-1', {
     direction: 'horizontal',
     loop: false,
   
@@ -78,7 +78,7 @@ const swiperHero2 = new Swiper('.swiper-container-hero2', {
   });
 
 
-  const Slider2 = new Swiper('.sliders1-container', {
+  const Slider2 = new Swiper('.sliders1-container-2', {
     direction: 'horizontal',
     loop: false,
   
@@ -159,15 +159,41 @@ const swiperHero2 = new Swiper('.swiper-container-hero2', {
   });
 
   let menuList = document.querySelector('.menu__list');
+  let menuWrapper = document.querySelector('.menu-wrapper');
   let menuItemLink = document.querySelectorAll('.menu__item-link');
+  let menuBackBtn = document.querySelector('.menu__back-btn')
   let menuExpandedTitle = document.querySelector('.menu__expanded-title');
 
   menuItemLink.forEach(function(el) {
     el.addEventListener('click', function() {
       menuList.style.display = 'none';
+      menuWrapper.querySelector('.menu__expanded-title').classList.add('pl100');
+      menuWrapper.querySelectorAll('.menu__expanded-list').forEach(function(el) {
+        el.classList.add('pl100')
+      });
+      menuWrapper.querySelector('.menu__socials').classList.add('pl100');
+      menuBackBtn.classList.add('menu__back-btn-active');
       document.querySelector(this.hash).style.display = 'block';
       menuExpandedTitle.innerHTML = this.innerHTML;
-      console.log(this.hash)
-      console.log(this.innerHTML);
+      // console.log(this.hash)
+      // console.log(this.innerHTML);
     })
   })
+
+  menuBackBtn.addEventListener('click', function() {
+    goBackToMenu();
+  })
+
+  function goBackToMenu() {
+    menuList.style.display = 'block';
+    menuWrapper.querySelector('.menu__expanded-title').classList.remove('pl100');
+    menuWrapper.querySelectorAll('.menu__expanded-list').forEach(function(el) {
+      el.classList.remove('pl100')
+    });
+    menuWrapper.querySelector('.menu__socials').classList.remove('pl100');
+    menuBackBtn.classList.remove('menu__back-btn-active');
+    menuExpandedTitle.innerHTML = '';
+    menuWrapper.querySelectorAll('.menu__expanded-list').forEach(function(el) {
+      el.style.display = 'none';
+    })
+  }

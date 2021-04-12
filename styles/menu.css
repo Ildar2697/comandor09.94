@@ -14,10 +14,6 @@
 .menu-wrapper {
     padding: 36px 42px;
 }
-.menu__close-btn {
-    cursor: pointer;
-    margin-bottom: 23px;
-}
 .menu__item-link {
     position: relative;
     font-family: 'montserratmedium';
@@ -46,6 +42,7 @@
     cursor: pointer;
 }
 .menu__socials-list {
+    width: 180px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,4 +63,21 @@
     margin-bottom: 29px;
     font-family: 'montserratlight';
     font-size: 24px;
+}
+.menu__close-btn {
+    cursor: pointer;
+    margin-bottom: 23px;
+}
+.menu__back-btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    left: 42px;
+}
+.menu__back-btn-active {
+    display: block;
+}
+.pl100 {
+    padding-left: 100px;
 }
